@@ -1,0 +1,10 @@
+#head{
+	width:1400px;
+	height:725px;
+	background-color: green;
+	margin:0 auto;
+}
+.top ul li{
+	float:left;
+
+}

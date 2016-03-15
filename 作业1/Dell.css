@@ -1,0 +1,261 @@
+*{font-family: "arial"}
+.logonavc{
+	height: 102px;
+
+}
+.logonav{
+	height: 102px;
+	width: 938px;
+	background-color: #fff;
+	margin:0 auto;
+}
+.log{
+	height: 102px;
+	width: 123px;
+	float: left;
+}
+.nav{
+	height: 102px;
+	width: 491px;
+	
+	float: left;
+}
+.nav1{
+	height: 52px;
+	width: 69px;
+	float: left;
+	margin-left: 16px;
+	padding-top: 50px;
+	background-image: url("images/xiasanjiao_05.gif");
+	background-repeat: no-repeat;
+	background-position: right 61px;
+
+}
+.nav2{
+	height: 102px;
+	width: 154px;
+	float: left;
+	margin-left: 16px;
+	padding-top: 50px;
+	background-image: url("images/xiasanjiao_05.gif");
+	background-repeat: no-repeat;
+	background-position: right 61px;
+}
+.nav3{
+	height: 102px;
+	width: 94px;
+	float: left;
+	margin-left: 16px;
+	padding-top: 50px;
+	background-image: url("images/xiasanjiao_05.gif");
+	background-repeat: no-repeat;
+	background-position: right 61px;
+}
+.nav4{
+	height: 102px;
+	width: 97px;
+	float: left;
+	margin-left: 16px;
+	padding-top: 50px;
+	background-image: url("images/xiasanjiao_05.gif");
+	background-repeat: no-repeat;
+	background-position: right 61px;
+}
+.nav1 ul,.nav2 ul,.nav3 ul,.nav4 ul{
+	margin:0 ;
+	padding:0;
+
+}
+.nav1 li,.nav2 li,.nav3 li,.nav4 li{
+	list-style: none;
+}
+
+
+.bar{
+	height: 102px;
+	width: 324px;
+	float: right;
+	background-color: #fff;
+}
+.bt{
+	height: 34px;
+}
+.bt ul{
+	padding:0;
+	margin:0;
+
+}
+.bt li{
+	list-style: none;
+	float: left;
+	font-size: 10px;
+	background-image: url("images/shutiao_10.gif");
+	background-repeat: no-repeat;
+	background-position: right center;
+	color: #4b6eb0;
+}
+#txt{
+	height: 25px;
+	width: 201px;
+	background-image: url("images/jing_12.gif");
+	background-repeat: no-repeat;
+	background-position: right center;
+
+	
+}
+.bm{
+	height: 25px;
+	width: 201px;
+	margin-left: 117px;
+
+	margin-bottom: 5px;
+}
+.bb{
+	height: 20px;
+	text-align: right;
+	font-size: 10px;
+	color: #555651;
+	padding-top: 5px
+}
+
+.bannerc{
+	height: 403px;	
+
+}
+.banner{
+	height: 403px;
+	width: 938px;
+	
+	background-color: #999;
+	margin:0 auto;
+}
+.mainc{
+	height: 285px;
+}
+.main{
+	height: 285px;
+	width: 938px;
+	margin:0 auto;
+	background-color: #fff;
+}
+.main1,.main2,.main3{
+	height: 283px;
+	width: 300px;
+	float: left;
+	border: 1px solid #ccc;
+	margin-left: 3px;
+	margin-right: 5px;
+
+}
+.main1 ul,.main2 ul,.main3 ul{
+	padding:0;
+	margin:0;
+}
+.main1 li,.main2 li,.main3 li{
+	list-style: none;
+	font-size: 8px;
+	list-style-image: url("images/yousanj_34.gif");
+	margin-left: 47px;
+}
+.main1 p,.main2 p,.main3 p{
+	margin-left: 23px;
+	font-size: 9px;
+}
+.centerc{
+	height: 47px;
+}
+.center{
+	height: 47px;
+	width: 938px;
+	background-color: #fff;
+	margin:0 auto;
+}
+.c1{
+	height: 47px;
+	width: 22px;
+	line-height: 47px;
+	margin-left: 6px;
+	float: left;
+
+}
+.c2{
+	height: 47px;
+	width: 189px;
+	float: left;
+}
+#txt{
+	height: 19px;
+	width: 189px;
+	margin-top: 13px;
+}
+.c3{
+	height: 47px;
+	width: 71px;
+	float: right;
+}
+.littlec{
+	height: 247px;
+}
+.little{
+	height: 245px;
+	width: 938px;
+	margin:0 auto;
+	background-color: #f8f8f8;
+	border: 1px solid #ccc;
+
+}
+.l1,.l2,.l3,.l4,.l5{
+	height: 245px;
+	width: 187px;
+	float: left;
+
+}
+.l1 p,.l2 p,.l3 p,.l4 p,.l5 p{
+	font-size: 11px;
+	margin-left: 21px;
+	font-weight: bold;
+	margin-top: 24px;
+}
+.l1 ul,.l2 ul,.l3 ul,.l4 ul,.l5 ul{
+	padding:0;
+	margin:0;
+}
+.l1 li,.l2 li,.l3 li,.l4 li,.l5 li{
+	list-style-image: url("images/yousanj_34.gif");
+	margin-left: 21px;
+	font-size: 8px;
+}
+.footerc{
+	height: 48px;
+
+}
+.footer{
+	height: 50x;
+	width: 938px;
+	background-color: #fff;
+	margin:0 auto;
+}
+.ft,.fm,.mr{
+	height: 16px;
+}
+.ft ul,.fm ul,.mr ul{
+	
+	margin:0;
+	padding:0;
+
+
+}
+.ft li,.fm li,.mr li{
+	list-style: none;
+	float: left;
+	font-size: 8px;
+	margin-right: 2px;
+	background-image: url("images/shutiao_10.gif");
+	background-repeat: no-repeat;
+	background-position: right center;
+	padding-right: 4px;
+
+}
+.ft table, .fm table,.mr table{
+ 	margin:0 auto;
+ }

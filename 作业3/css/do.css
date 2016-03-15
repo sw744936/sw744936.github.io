@@ -1,0 +1,21 @@
+#header{
+	width:1263;
+	height: 500px;
+	margin:0 auto;
+}
+.head{
+	width:1263px;
+	height:32px;
+}
+.head_left{
+	width:225px;
+	height:32px;
+	padding-left:150px;
+	float:left;
+}
+.head_right{
+	width: 90px;
+	height: 32px;
+	float:left;
+
+}
