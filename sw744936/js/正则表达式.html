@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input type="buttom" class="in">
+</body>
+	<script src="js/jquery1.js"></script>
+	<script>
+	// (一)
+		// var reg=/^5$/;
+
+		// $(".in").blur(function(){
+
+		// 	var str=$(".in").val();
+
+		// 	var result=reg.test(str);
+
+		// 	console.log(result);
+
+		// })
+
+		// var reg=/[a-z]{5,8}[a-z0-9]\@\.com/;
+
+		// $(".in ").blur( function(){
+
+		// 	var str=$(".in").val();
+
+		// 	var result=reg.test(str);
+
+		// 	console.log(result);
+		// })
+
+			var date="2016-3-22";
+
+			var reg=/^2016\-[0-9]{1,2}\-[0-9]{1,2}$/;
+
+			var result=reg.exec(date);
+
+			console.log(result);
+		
+
+	</script>
+</html>

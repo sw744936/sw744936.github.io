@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<!-- <ul>
+		<li>香蕉<a href="#" class="del">删除</a></li>
+		<li>苹果<a href="#" class="del">删除</a></li>
+		<li>摸摸<a href="#" class="del">删除</a></li>
+		<li>魅影<a href="#" class="del">删除</a></li>
+	</ul> -->
+
+
+	<ul>
+		<li><a href="#">香蕉</a><span class="del">删除</span></li>
+		<li><a href="#">香蕉</a><span class="del">删除</span></li>
+		<li><a href="#">香蕉</a><span class="del">删除</span></li>
+		<li><a href="#">香蕉</a><span class="del">删除</span></li>
+	</ul>
+	<script src="js/jquery1.js"></script>
+	<script>
+		$(".del").click(function(){
+
+			var result=confirm("是否删除");
+
+			$(this).parent().remove();
+
+			$("this li").append(add);
+
+		})
+
+	</script>
+</body>
+</html>

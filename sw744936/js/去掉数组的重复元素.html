@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var a=[1,2,3,3,4,5,6,7,8,4,5,6];
+		for(i=0;i<a.length;i++){
+			for(x=i+1;x<a.length;x++){
+
+				if(a[i]==a[x]){
+					console.log(a[x])
+
+					a.splice(x,1)
+				}
+			}
+		}
+
+		console.log(a)
+	</script>
+</body>
+</html>

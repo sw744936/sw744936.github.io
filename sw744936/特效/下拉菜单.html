@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	*{
+		margin:0px;
+		padding:0px;
+	}
+	#list>li{
+		list-style:none;
+		width: 100px;
+		height: 30px;
+		text-align:center;
+		border:1px solid #f00;
+		line-height:30px;
+		float:left;
+	}
+	.next-list{
+		display:none;
+		list-style: none;
+		background-color:red;
+	}
+	</style>
+</head>
+<body>
+	<ul id="list">
+		<li>
+			<a href="">电视剧</a>
+			<ul class="next-list">
+				<li>武侠</li>
+				<li>言情</li>
+				<li>古装剧</li>
+				<li>情感剧</li>
+			</ul>
+		</li>
+		<li>
+			<a href="">电影</a>
+			<ul class="next-list">
+				<li>武侠</li>
+				<li>恐怖</li>
+				<li>情感</li>
+				<li>鬼片</li>
+			</ul>
+		</li>
+		<li>
+			<a href="">综艺</a>
+			<ul class="next-list">
+				<li>体育</li>
+				<li>美食</li>
+				<li>娱乐</li>
+				<li>新闻</li>
+			</ul>
+		</li>
+	</ul>
+	<script src="js/jquery1.11.1.js"></script>
+	<script>
+		//这是在a标签里才能执行
+	//	$("#list>li>a").mouseenter(function(){
+	//		$(this).next().stop().slideDown(500);
+	//	})
+
+	//	$("#list>li>a").mouseleave(function(){
+	//		$(this).next().stop().slideUp(500);
+	//	})
+
+		//这是写的l<li>标签
+		$("#list>li").mouseenter(function(){
+		//$(this)这是<li>标签 .(find)这是下一级. ("ul")找到
+		//找到("ul")标签  .stop()这是暂停
+			$(this).find("ul").stop().slideDown(500);
+
+		}).mouseleave(function(){
+
+			$(this).find("ul").stop().slideUp(500);
+		})
+	
+	</script>
+</body>
+</html>

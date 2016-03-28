@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input type="button" id="btn" value="抽奖">
+	<script src="js/jquery1.js"></script>
+	<script>
+		// 给(btn)绑定一个点击事件
+		$("#btn").click(function(){
+			getName();
+		})
+			// 创建一个数组
+			var nameList=["李磊","韩梅梅","侯建东","韩小雨","王兴伟","华晨","心雨"];
+			// 给数组定义从开始到结束
+			var length =nameList.length;
+			
+			var obj = {};
+
+			function getName(){
+				var num = Math.floor(Math.random()*length);
+				if(obj[nameList[num]] == undefined){
+
+					obj[nameList[num]] =1;
+					console.log(nameList[num])
+				}else{
+					getName();
+				}
+		}
+
+
+	</script>
+</body>
+</html>

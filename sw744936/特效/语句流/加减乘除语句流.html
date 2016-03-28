@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	*{
+		margin:0px;
+		padding:0px;
+	}
+	</style>
+
+</head>
+<body>
+
+	<input type="text" id="num1">
+	<input type="text" id="num2">
+	<input type="text" id="num3">
+	<input type="text" id="num">
+	<input type="button" id="and" value="计算">
+	
+	<script src="js/jquery1.js"></script>
+	<script>
+		$("#and").click(function(){
+			//将num1: 转换  ("num1")字符串成数字
+			var num1=Number($("#num1").val());
+			//将num3: 转换  ("num3")字符串成数字
+			var num3=Number($("#num3").val());
+			//变量(sign)取出的值 (val)的值是什么(sign)就是什么值
+			var sign=$("#num2").val();
+
+			//变量(sign)取的值和(+)的比较
+			//如果取的值相同就用，不同就取下一个
+			if(sign=="+"){
+
+				var result= num1 + num3;
+			}
+			else if(sign=="-"){
+				var result= num1 - num3;
+			}
+			else if(sign=="*"){
+				var result= num1 * num3;
+			}
+			else if(sign="/"){
+				var result= num1 / num3;
+			}
+
+			//val()去里面的值不需要加东西，改变值在里面加。
+			//val("value",num)
+			$("#num").val(result);
+
+		})
+
+
+	</script>
+</body>
+</html>

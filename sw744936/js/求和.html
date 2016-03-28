@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input type="text" class="number1">
+	<input type="text" class="sign">
+	<input type="text" class="number2">
+	<input type="text" class="sum">
+	<input type="button" class="and" value="结果">
+
+	<script src="js/jquery1.js"></script>
+	<script>
+		$(".and").click(function(){
+	//以下语句实现把字符串转换成数字并相加
+			var number1=Number($(".number1").val());
+			var number2=Number($(".number2").val());
+			if(number1==0 || number2==0){
+				alert("请您输入数值")
+			}
+			var sign=$(".sign").val();
+			switch(sign){
+				case("+"):
+				var sum=number1+number2;
+				break;
+				case("-"):
+				var sum=number1-number2;
+				break;
+				case("*"):
+				var sum=number1*number2;
+				break;
+				case("/"):
+				var sum=number1/number2;
+				break;
+
+			}
+			$(".sum").val(sum);
+
+			/*if(sign=="+"){
+				var sum=number1+number2;
+				$(".sum").val(sum);
+			}
+			else if(sign=="-"){
+				var sum=number1-number2;
+				$(".sum").val(sum);
+			}
+			else if(sign=="*"){
+				var sum=number1*number2;
+				$(".sum").val(sum);
+			}
+			else if(sign=="/"){
+				var sum=number1/number2;
+				$(".sum").val(sum);
+			*/
+			//$(".sum").attr("value",sum)
+			
+		})
+	  </script>
+	
+</body>
+</html>

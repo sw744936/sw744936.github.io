@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		*{
+			margin:0px;
+			padding:0px;
+		}
+		.box{
+			width: 300px;
+			height: 300px;
+			border:1px solid #f00;
+			overflow:hidden;
+		}
+		#list{
+			width: 1200px;
+			list-style:none;
+		}
+		#list li{
+			width: 300px;
+			height: 300px;
+			float:left;
+		}
+		.box1{
+			background-color:red;
+		}
+		.box2{
+			background-color:green;
+		}
+		.box3{
+			background-color:yellow;
+		}
+		.box4{
+			background-color:blue;
+		}
+		#list-num li{
+			width: 30px;
+			height: 30px;
+			border:1px solid #f00;
+			list-style:none;
+			float:left;
+			text-align:center;
+			line-height:30px;
+		}
+	</style>
+</head>
+<body>
+	
+	<div class="box">
+		<ul id="list">
+			<li class="box1"><img src="images/1.jpg" alt=""></li>
+			<li class="box2"><img src="images/3.jpg" alt=""></li>
+			<li class="box3"><img src="images/4.jpg" alt=""></li>
+			<li class="box4"><img src="images/5.jpg" alt=""></li>	
+		</ul>
+	</div>
+	<ul id="list-num">
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+	</ul>
+	<script src="js/jquery1.11.1.js"></script>
+	<script>
+		$("#list-num li").click(function(){
+			var index = $(this).index();
+			var marleft = -300 * index;
+			$("#list").animate({"margin-left":marleft},5000);
+		})
+	</script>
+</body>
+</html>

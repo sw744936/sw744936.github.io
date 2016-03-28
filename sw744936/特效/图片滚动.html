@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	*{
+		margin:0px;
+		padding:0px;
+	}
+	.list{
+		width: 100px;
+		height: 50px;
+		overflow: hidden;
+	}
+	.box1 {
+		width: 100px;
+		height: 100px;
+		overflow: hidden;
+	}
+	.box1 span{
+		height: 50px;
+		width: 100px;
+		background-color:red;
+		display: block;
+	}
+	.box1 a{
+		height: 50px;
+		width: 100px;
+		background-color:yellow;
+		display: block;
+	}
+	</style>
+</head>
+<body>
+	<ul>
+		<li class="list">
+			<div class="box1">
+				<span>主页</span>
+				<a href="">电影</a>
+			</div>
+		</li>
+	</ul>
+	<script src="js/jquery1.11.1.js"></script>
+	<script>
+		$(".box1").mouseenter(function(){
+			$(this).animate({"margin-top":"-50px"},3000)
+		}).mouseleave(function(){
+			$(this).stop().animate({"margin-top":"0px"},3000)
+		})
+	</script>
+</body>
+</html>
